@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web especial para poder agregar tareas diarias con el objetivo de cumplirlas solo en el día en el que se escribio.">
+    <meta name="keywords" content="to do list, task, tareas diarias, tareas">
+    <meta name="author" content="Sbleit">
+    <meta name="robots" content="index">
+    <link rel="stylesheet" href="others/css/mobile.css" type="text/css">
+    <link rel="stylesheet" href="others/css/main.css" type="text/css">
+    <title>Tareas Mobile</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="dinamic"><img style="color:white; width:70px; height: 30px;" src="others/images/menu.svg" alt="icono menu"></button>
+            
+            
+            <ul>
+                <li><h1>Logo</h1></li>
+                <li><img style="width:30px; height: 20px;" src="others/images/sesion.svg" alt="icono iniciar sesion"><a href="others/sections/login.html">Iniciar Sesión</a></li>
+                <li><img style="width:30px; height: 20px;" src="others/images/ayuda.svg" alt="icono de ayuda"><a href="others/sections/help.html">Ayuda</a></li>
+                <li><img style="width:30px; height: 20px;" src="others/images/about.svg" alt="icono sobre nosotros"><a href="others/sections/aboutus.html">Quienes somos</a></li>
+                <li><img style="width:30px; height: 20px;" src="others/images/donate.svg" alt="icono sobre nosotros"><a href="others/sections/donate.html">Donar</a></li>
+                <button id="off">Volver</button>
+
+            </ul>
+        </nav>
+    </header>
+    <!-- si no quiero que se vea de la forma separada quito el style y ya -->
+    <main class="main" style="height:90vh; display: flex; flex-direction:column; justify-content:space-evenly">
+        <div class="container">
+            <div class="container-items">
+                <div class="container-self">
+                    <input type="radio">Hacer mi almuerzo
+                </div>
+                <div><img id="options" style="width:30px; height: 20px;" src="others/images/opciones.svg" alt="icono iniciar sesion"></div>
+            </div>
+            <div class="container-items">
+                <div class="container-self">
+                    <input type="radio">Estudiar para no se que cosa
+                    <!-- <div><img style="width:30px; height: 20px;" src="images/opciones.svg" alt="icono iniciar sesion"></div> -->
+                </div>
+                <div><img id="options" style="width:30px; height: 20px;" src="others/images/opciones.svg" alt="icono iniciar sesion"></div>
+            </div>
+            <div class="container-items">
+                <div class="container-self">
+                    <input type="radio">Barrer toda la casa y luego
+                </div>
+                <div><img id="options" style="width:30px; height: 20px;" src="others/images/opciones.svg" alt="icono iniciar sesion"></div>
+            </div>
+        </div>
+        <form style="display:flex; justify-content: center; align-items: end;" class="buttons-input">
+            <input class="addTarea" type="text" placeholder="Añadir tarea" required>
+            <input class="submitwork" type="submit" value="Añadir">
+        </form>
+    </main>
+
+</body>
+<script src="others/script.js"></script>
+<script src="others/options.js"></script>
+</html>
