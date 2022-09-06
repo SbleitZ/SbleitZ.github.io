@@ -1,11 +1,7 @@
 let botondrop = document.getElementById("dinamic")
 let offdrop = document.getElementById("off")
 let contenido = document.querySelector(".main")
-let enviarTarea = document.querySelector(".submitwork")
 visible = false
-enviarTarea.onclick = () =>{
-    console.log("Hola tarea añadida")
-}
 botondrop.onclick = () => {
         botondrop.nextElementSibling.style.transform = "translateX(0px)"
         console.log(botondrop.parentElement)
