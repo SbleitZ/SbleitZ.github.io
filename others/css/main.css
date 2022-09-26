@@ -18,12 +18,15 @@ input[type="submit"]{
     border: 2px solid blue;
     /* border-left: none; */
     height: 36px;
+    background-color: blue;
+    color: white;
+    cursor:pointer;
 }
 
 .container-items{
     width: 90%;
-    height: 25px;
-    background-color: #eee;
+    height: 25px;/*lo tenia como 25*/
+    background-color: #e4ebf6;
     text-align: center;
     margin:1px;
     display: flex;
@@ -31,7 +34,8 @@ input[type="submit"]{
     align-items: center;
     padding: 4px;
     border-radius: 3px;
-    border-left: 5px solid rgb(66, 182, 66) ;
+    border-left: 5px solid #8f9efa;
+    color:#4d5eac;
     
 }
 input[type="radio"]{
@@ -42,5 +46,7 @@ header ul a{
     color: inherit;
 }
 header ul a:hover{
-    color: red;
+    color: #595f84;
+    border-bottom: 2px solid #4d5eac;
+    /* transition: border-bottom 0.5s; */
 }

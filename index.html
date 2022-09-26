@@ -10,6 +10,11 @@
     <meta name="robots" content="index">
     <link rel="stylesheet" href="others/css/mobile.css" type="text/css">
     <link rel="stylesheet" href="others/css/main.css" type="text/css">
+    <link rel="stylesheet" href="others/css/desktop.css" type="text/css">
+    <link rel="stylesheet" href="others/css/footer.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Ubuntu&display=swap" rel="stylesheet">
     <title>Tareas Mobile</title>
 </head>
 <body>
@@ -30,33 +35,61 @@
         </nav>
     </header>
     <!-- si no quiero que se vea de la forma separada quito el style y ya -->
-    <main class="main" style="height:90vh; display: flex; flex-direction:column; justify-content:space-evenly">
+    <main class="main"  style="display:flex;  height: 100vh; flex-direction:column; justify-content:space-evenly;">
         <div class="container">
             <div class="container-items">
                 <div class="container-self">
                     <input type="radio">Hacer mi almuerzo
                 </div>
-                <div><img id="options" style="width:30px; height: 20px;" src="others/images/opciones.svg" alt="icono iniciar sesion"></div>
+                <div><img id="options" style="width:30px; height: 20px;" src="others/images/eliminar.svg" alt="icono iniciar sesion">
+                    <div class = "delOption">
+                        <span>Eliminar tarea</span>
+                    </div>
+                </div>
+                
             </div>
             <div class="container-items">
                 <div class="container-self">
                     <input type="radio">Estudiar para no se que cosa
                     <!-- <div><img style="width:30px; height: 20px;" src="images/opciones.svg" alt="icono iniciar sesion"></div> -->
                 </div>
-                <div><img id="options" style="width:30px; height: 20px;" src="others/images/opciones.svg" alt="icono iniciar sesion"></div>
+                <div><img id="options" style="width:30px; height: 20px;" src="others/images/eliminar.svg" alt="icono iniciar sesion">
+                    <div class = "delOption">
+                        <span>Eliminar tarea</span>
+                    </div></div>
             </div>
             <div class="container-items">
                 <div class="container-self">
                     <input type="radio">Barrer toda la casa y luego
                 </div>
-                <div><img id="options" style="width:30px; height: 20px;" src="others/images/opciones.svg" alt="icono iniciar sesion"></div>
+                <div><img id="options" style="width:30px; height: 20px;" src="others/images/eliminar.svg" alt="icono iniciar sesion">
+                    <div class = "delOption">
+                        <span>Eliminar tarea</span>
+                    </div></div>
             </div>
         </div>
         <form style="display:flex; justify-content: center; align-items: end;" class="buttons-input">
             <input class="addTarea" type="text" placeholder="Añadir tarea" required>
-            <input class="submitwork" type="submit" value="Añadir">
+            <input class="submitwork" type="submit" value="Añadir" title="Clickea para añadir una tarea">
         </form>
     </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-img-container" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                <h1>Logo aqui</h1>
+                <p>Información imporatente aksjdhajgfa dpkosdagjpho jierreiekjjkdfj</p>
+            </div>
+            <ul>
+                <li><h1>Lorem IPSUM</h1></li>
+                <li>Lorem iposum</li>
+                <li>Lorem iposum</li>
+                <li>Lorem iposum</li>
+                <li>Lorem iposum</li>
+                <li>Lorem iposum</li>
+
+            </ul>
+        </div>
+    </footer>
 
 </body>
 <script src="others/script.js"></script>

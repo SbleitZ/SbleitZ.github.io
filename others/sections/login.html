@@ -9,17 +9,33 @@
     <meta name="author" content="Sbleit">
     <meta name="robots" content="index">
     <link rel="stylesheet" href="../css/login.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Ubuntu&display=swap" rel="stylesheet">
     <title>Login - name</title>
 </head>
 <body>
     <a href="../../index.html">Volver</a>
     <div class="login-container">
+        <h1>Logo</h1>
+        <h2>Bienvenido de vuelta!</h2>
         <form class="form-container">
-            <h1>No disponible</h1>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="password" required>
+            <!-- <p>Email</p> -->
+            <div class="user-input" style="display: flex;">
+                <div class="img-input" style="background-color: aliceblue; margin-top: 4px;position:absolute;width:20px; height: 20px; box-shadow: rgba(0, 0, 250, 0.2) 0px 2px 8px 0px; padding: 5px; border-radius: 50%;">
+                    <img style="width:20px; height: 15px; padding-top: 2px;" src="../images/user.svg">
+                </div>
+                <input type="email" placeholder="      Email" required>
+            </div>
+            <!-- <p>Contraseña</p> -->
+            <div class="password-input" style="display: flex;">
+                <div class="img-input" style="background-color: aliceblue; margin-top: 4px;position:absolute;width:20px; height: 20px; box-shadow: rgba(0, 0, 250, 0.2) 0px 2px 8px 0px; padding: 5px; border-radius: 50%;">
+                    <img style="width:20px; height: 15px; padding-top: 2px;" src="../images/user.svg">
+                </div>
+                <input type="password" placeholder="      Contraseña" required>
+            </div>
             <a href="#">¿Olvidarte tu contraseña?</a>
-            <input type="submit">
+            <input type="submit" value="Iniciar sesión">
         </form>
         <a href="#">Crear Cuenta</a>
     </div>

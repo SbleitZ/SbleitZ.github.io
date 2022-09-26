@@ -4,7 +4,7 @@ let contenido = document.querySelector(".main")
 visible = false
 botondrop.onclick = () => {
         botondrop.nextElementSibling.style.transform = "translateX(0px)"
-        console.log(botondrop.parentElement)
+        // console.log(botondrop.parentElement)
         botondrop.style.visibility = "hidden"
         // contenido.style.filter = "blur(4px)"
         // botondrop.style.position = "absolute"activar esto para q suba la wea

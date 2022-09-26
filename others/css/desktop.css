@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    #dinamic{
+        display: none;
+    }
+    nav ul{
+        visibility: visible;
+        display: flex;
+        position:none;
+        background-color: transparent;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        margin-top: 50px;
+        font-size:1.5rem;
+        transform: none !important;
+    }
+    nav ul li{
+        color: #4d5eac;
+        margin: 0px 12px;
+    }
+    nav ul button{
+        display: none;
+    }
+    .footer-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+}

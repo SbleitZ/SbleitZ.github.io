@@ -1,13 +1,21 @@
+*{
+    margin:0;
+    font-family: 'Fraunces', serif;
+    font-family: 'Ubuntu', sans-serif;
+}
 body{
-    background-color: #eee;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 94vh;
 }
-
+h1{
+    color: blue;
+}
 .login-container{
-    outline: 2px solid rgb(45, 42, 42);
+    /* outline: 2px solid rgb(45, 42, 42); */
+    gap: 25px;
     height: 50%;
     width: 70%;
     border-radius: 8px;
@@ -27,15 +35,21 @@ input[type="email"], input[type="password"], .form-container a, input[type="subm
     margin: 6px 0px;
 }
 input[type="submit"]{
-    background-color: rgb(74, 197, 72);
+    background-color: #8f9efa;
     padding: 12px;
-    width: 80px;
+    width: 100px;
     color: white;
+    border-radius: 20px;
+
 }
 input[type="email"], input[type="password"]{
     height: 25px;
-    -webkit-box-shadow: 3px 1px 15px 5px rgba(0,0,0,0.42); 
-    box-shadow: 3px 1px 15px 5px rgba(0,0,0,0.42);
+    /* border: 2px solid #8f9efa; */
+    border-radius: 12px;
+    margin-left: 12px;
+    box-shadow: rgba(0, 0, 250, 0.2) 0px 2px 8px 0px;
+    /* -webkit-box-shadow: 3px 1px 15px 5px rgba(0,0,0,0.42); 
+    box-shadow: 3px 1px 15px 5px rgba(0,0,0,0.42); */
 }
 .login-container a:visited{
     text-decoration: none;
@@ -52,4 +66,7 @@ a[href="../../index.html"]{
     /* justify-content: start; */
     left: 6px;
     text-decoration: none;
+}
+input:focus{
+    outline: none;
 }
