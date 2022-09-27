@@ -34,8 +34,17 @@ render = () =>{
     
     })
 }
-
+cargarElements = () =>{
+    fragmento = document.createDocumentFragment()
+    createElemento = document.createElement("DIV")
+    createElemento.classList.add("container-items")
+    createElemento.innerHTML = crearElemento(localStorage.getItem("tarea"))
+    fragmento.appendChild(createElemento)
+    contenidoA.appendChild(fragmento)
+    // entradaTask.previousElementSibling.value = ""
+}
 window.onload = () => {
+    cargarElements()
     render()
     form.onsubmit = (e) =>{
         e.preventDefault();//evitar que se recargue la pagina(hará que se pierda los datos por el momento, además de ser molesto para el usuario)
@@ -43,6 +52,7 @@ window.onload = () => {
         createElemento = document.createElement("DIV")
         createElemento.classList.add("container-items")
         createElemento.innerHTML = crearElemento(entradaTask.previousElementSibling.value)
+        localStorage.setItem("tarea", entradaTask.previousElementSibling.value)
         fragmento.appendChild(createElemento)
         contenidoA.appendChild(fragmento)
         entradaTask.previousElementSibling.value = ""
